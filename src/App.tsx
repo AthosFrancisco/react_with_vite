@@ -1,12 +1,12 @@
-import {Header} from './components/Header';
-
 const App = () => {
+
+  const handleClickButton = () => {
+    alert('botão clicado');
+  }
 
   return (
     <div>
-      <Header title='Olá Mundi'/>
-      <Header title='Tudo bem?'/>
-      <Header/>
+      <button onClick={handleClickButton}>Clique aqui</button>
     </div>
   );
 }
