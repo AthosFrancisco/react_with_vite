@@ -4,8 +4,9 @@ const App = () => {
 
   return (
     <div>
+      <Header title='Olá Mundi'/>
+      <Header title='Tudo bem?'/>
       <Header/>
-      Olá Mundo!
     </div>
   );
 }
