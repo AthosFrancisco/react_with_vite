@@ -1,7 +1,13 @@
 const App = () => {
+  let name: string = 'Athos';
+  let lastname: string = 'Carmo';
+  let link: string = 'https://google.com';
+
   return (
     <div>
-      Olá Mundo!
+      Olá: {name} {lastname}
+      <br />
+      <a href={link}>Google</a>
     </div>
   );
 }
