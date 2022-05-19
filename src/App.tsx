@@ -1,12 +1,17 @@
+import { useState } from "react";
+
 const App = () => {
 
-  const handleClickButton = () => {
-    alert('botão clicado');
-  }
+  const [name, setName] = useState('Athos');
 
+  const handleName = () => {
+    setName('Bonieky');
+  }
+  
   return (
     <div>
-      <button onClick={handleClickButton}>Clique aqui</button>
+      <p>Meu nome é {name}</p>
+      <button onClick={handleName}>Clique aqui</button>
     </div>
   );
 }
